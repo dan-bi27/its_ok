@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+	<title>it's ok</title>
+	
+	<style type="text/css">
+		body{background: url(wave.png) #ffd7d7 no-repeat fixed center; width:1200px; margin: 0px;}
+		
+		.redheart{width:150px; height: 150px;  opacity: 1; position: absolute; left: 50%; margin-left: -75px; top: 50%;}
+		#butb{ opacity: 0; position: absolute; width: 500px; height: auto; }
+			
+
+		
+		
+	</style>
+</head>
+<body id="mybody">
+	<audio controls id="water">
+			<source src="water.mp3" type="audio/mpeg">	
+		</audio>
+
+		<div class="redheart" id="buta">
+			<img src="heart.png" style="width: 150px; height: auto;">
+		</div>
+
+		<audio id="baam" loop>
+  			<source src="baam.mp3" type="audio/mpeg">
+ 		</audio>
+
+ 		
+ 		<img src="error.jpg" id="butb">
+ 		
+	
+
+	
+
+	<script type="text/javascript">
+		buta.onclick = function(){
+			buta.style.opacity = "0"
+			baam.play();
+			water.volume = "0"
+			mybody.style.background = "url(error.jpg)"
+			
+		}
+	</script>
+
+</body>
+</html>
